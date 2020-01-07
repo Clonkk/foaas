@@ -105,3 +105,11 @@ FOAAS will respond to the following 'Accept:' values with appropriate content
 | /you/:name/:from                  | Will return content of the form 'Fuck you, :name. - :from'                                                                                                                                                                                                                                                                                                                                            |
 | /zayn/:from                       | Will return content of the form 'Ask me if I give a motherfuck ?!! - :from'                                                                                                                                                                                                                                                                                                                           |
 | /zero/:from                       | Will return content of the form 'Zero, that's the number of fucks I give. - :from'                                                                                                                                                                                                                                                                                                                    |
+
+
+# Usage
+
+* Install Nim version 1.0.4 (minimum) and Nimble v0.11.0 (minimum).
+* Clone this repository : `git clone https://github.com/Clonkk/foaas.git`
+* Run `nimble build` to build the binary called `foaas.out`
+* `./foaas.out` 
