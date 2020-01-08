@@ -1,3 +1,6 @@
+# See the file "LICENSE", included in this repository, for details about the copyright.
+# (c) Copyright 2020 Caillaud Régis
+
 import strtabs
 
 proc getWord*(key: string): string =
