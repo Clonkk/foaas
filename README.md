@@ -5,7 +5,7 @@ A Nim implementation of [Fuck off As A Service](https://www.foaas.com/)
 
 FOAAS will respond to the following 'Accept:' values with appropriate content :
 * [x] text/plain - Content will be returned as a plain string.
-* [ ] application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }
+* [x] application/json - Content will be returned as a JSON object { message: 'message', subtitle: 'subtitle' }
    * [ ] (Optionnal ?) Supports jsonp by including ?callback=?
 * [ ] text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
 * [ ] application/xml - Content will be returned as a XML document.
