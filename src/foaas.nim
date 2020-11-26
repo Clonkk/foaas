@@ -31,7 +31,7 @@ proc cb(req: Request) {.async.} =
           await req.respond(res.code, res.msg, headers)
         of "text/plain", "text/html":
           let headers = newHttpHeaders([("Content-Type", "text/plain")])
-          var res: Res = foaasReplyJson(path, data)
+          var res: Res = foaasReplyText(path, data)
           await req.respond(res.code, res.msg, headers)
   except KeyError:
     echo "wrong accept header"
