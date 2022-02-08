@@ -1,0 +1,19 @@
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  default:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Nim 1.6.0
+        uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: '1.6.0' # default is 'stable'
+      - run: uname -a
+      - run: nim -v
